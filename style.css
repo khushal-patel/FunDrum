@@ -11,70 +11,100 @@ html, body{
     background-position: bottom;
 }
 
-.drums{
-    width: 300px;
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #faf4ff;
 }
 
 @media(max-width:600px){
+    #advise{
+        visibility: hidden;
+    }
+
     body{
         position: relative;
     }
 
     .drums{
-        width: 125px;
-        transform: rotate(90deg);
+        width: 120px;
+        height: 120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-size: 0;
         position: absolute;
+        transform: rotate(90deg);
+        border-radius: 50%;
+        box-shadow: 1px 8px 5px #1b262c;
     }
 
     .tom{
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     #snare{
+        background-image: url('images/snare1.png');
         width: 160px;
-        top: 13%;
+        height: 160px;
+        top: 7%;
         left: 10%;
+        z-index: 1;
+        opacity: 0.9;
     }
 
     #crash{
+        background-image: url('images/crash.png');
         width: 150px;
+        height: 150px;
         top: 13%;
         left: 48%;
-        z-index: 1;
+        z-index: 2;
     }
 
     #tom1{
+        background-image: url('images/tom-1.png');
+        width: 125px;
+        height: 125px;
         top: 30%;
         right: 10%;
+        z-index: 1;
     }
 
     #tom2{
+        background-image: url('images/tom-1.png');
         width: 140px;
+        height: 140px;
         top: 46%;
         right: 8%;
         z-index: 2;
     }
 
     #cymbal{
+        background-image: url('images/crash.png');
         width: 170px;
+        height: 170px;
         top: 61%;
         right: 5%;
         z-index: 5;
     }
 
     #tom3{
+        background-image: url('images/tom-1.png');
         width: 170px;
-        bottom: 10%;
+        height: 170px;
+        bottom: 7%;
         left: 14%;
+        z-index: 1;
     }
 
     #kick{
-        width: 300px;
-        top: 32%;
+        background-image: url('images/tom-1.png');
+        width: 350px;
+        height: 350px;
+        top: 26%;
         left: -20%;
     }
 
-    h1{
+    .footer h1{
         position: absolute;
         bottom: 0%;
         right: 1%;
@@ -83,4 +113,23 @@ html, body{
         font-size: 10px;
     }
 
+}
+
+@media(min-width:600px){
+    .drums{
+        visibility: hidden;
+    }
+
+    #advise{
+        visibility: initial;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .footer h1{
+        visibility: hidden;
+    }
 }
