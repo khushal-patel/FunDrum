@@ -26,7 +26,7 @@ for (var i=0; i<document.querySelectorAll('.drums').length; i++){
             audio.play();
         }
         else if(this.id=='kick') {
-            var audio = new Audio('sounds/kick-bass.mp3')
+            var audio = new Audio('sounds/tom-4.mp3')
             audio.play();
         }
 
