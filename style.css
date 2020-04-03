@@ -47,7 +47,7 @@ h1{
         width: 160px;
         height: 160px;
         top: 7%;
-        left: 10%;
+        left: 5%;
         z-index: 1;
         opacity: 0.9;
     }
@@ -56,8 +56,8 @@ h1{
         background-image: url('images/new/crash-min.png');
         width: 150px;
         height: 150px;
-        top: 13%;
-        left: 48%;
+        top: 11%;
+        left: 45%;
         z-index: 2;
     }
 
@@ -83,8 +83,8 @@ h1{
         background-image: url('images/new/crash-min.png');
         width: 170px;
         height: 170px;
-        top: 61%;
-        right: 5%;
+        top: 63%;
+        right: 15%;
         z-index: 5;
     }
 
@@ -93,7 +93,7 @@ h1{
         width: 170px;
         height: 170px;
         bottom: 7%;
-        left: 14%;
+        left: 10%;
         z-index: 1;
     }
 
@@ -112,6 +112,10 @@ h1{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: #ffffff;
         font-size: 10px;
+    }
+
+    .drums:active{
+        opacity: 0.7;
     }
 
 }
